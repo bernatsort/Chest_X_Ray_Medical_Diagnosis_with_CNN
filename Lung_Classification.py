@@ -7,6 +7,7 @@ import matplotlib
 import matplotlib.pyplot as plt 
 
 
+
 # packages versions
 print('Python: {}'.format(sys.version))
 print('Pandas: {}'.format(pd.__version__))
