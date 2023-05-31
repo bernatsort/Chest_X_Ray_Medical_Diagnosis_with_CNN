@@ -2,9 +2,6 @@ import pydicom
 import matplotlib.pyplot as plt
 import os
 
-# Path to the directory containing DICOM files
-directory = 'data/train'
-
 def load_data(url: str):
     pass
 
@@ -28,5 +25,9 @@ def find_images(url: str):
             plt.show()
         elif os.path.isdir(file_path):
             find_images(file_path)
+
+
+# Path to the directory containing DICOM files
+directory = 'Body_Parts_Dataset/train'
 
 find_images(directory)
