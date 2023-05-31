@@ -2,4 +2,5 @@
 compvis_env/
 
 # Data
-data/
+Body_Parts_Dataset/
+Lungs_Dataset/
