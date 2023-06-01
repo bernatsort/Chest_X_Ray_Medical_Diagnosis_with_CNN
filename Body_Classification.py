@@ -291,22 +291,28 @@ def classification_VGG(main_dir: str, csv_dir: str):
 
     print(X_train.shape)
 
-
     model.summary()
     #hist = model.fit(traindata, steps_per_epoch=25, validation_data=testdata, validation_steps=10, epochs=5, callbacks=[checkpoint, early])
     hist = model.fit(traindata, steps_per_epoch=7, validation_data=testdata, validation_steps=5, epochs=50)
     
-    
     # Plot train history
     plt.plot(hist.history["accuracy"])
     plt.plot(hist.history['val_accuracy'])
-    plt.plot(hist.history['loss'])
-    plt.plot(hist.history['val_loss'])
     plt.title("model accuracy")
     plt.ylabel("Accuracy")
     plt.xlabel("Epoch")
-    plt.legend(["Accuracy","Validation Accuracy","loss","Validation Loss"])
-    plt.show()
+    plt.legend(["Accuracy","Validation Accuracy"])
+    plt.savefig("Accuracy.png")
+    
+    # Plot train history
+    plt.clf()
+    plt.plot(hist.history['loss'])
+    plt.plot(hist.history['val_loss'])
+    plt.title("model loss")
+    plt.ylabel("Loss")
+    plt.xlabel("Epoch")
+    plt.legend(["loss","Validation Loss"])
+    plt.savefig("Accuracy.png")
     
 
 train_csv_file = "Body_Parts_Dataset/train.csv"
