@@ -294,7 +294,7 @@ def classification_VGG(main_dir: str, csv_dir: str):
 
     model.summary()
     #hist = model.fit(traindata, steps_per_epoch=25, validation_data=testdata, validation_steps=10, epochs=5, callbacks=[checkpoint, early])
-    hist = model.fit(traindata, steps_per_epoch=5, validation_data=testdata, validation_steps=2, epochs=5)
+    hist = model.fit(traindata, steps_per_epoch=7, validation_data=testdata, validation_steps=5, epochs=50)
     
     
     # Plot train history
