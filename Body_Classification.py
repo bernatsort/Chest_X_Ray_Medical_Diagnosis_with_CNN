@@ -246,7 +246,7 @@ def classification_VGG(main_dir: str, csv_dir: str):
     te_datagen = ImageDataGenerator()
     
     # Set the batch size
-    batch_size = 32
+    batch_size = 128
 
     # Resize train data
     #X_train = np.array([tf.image.resize(image, target_size).numpy() for image in X_train])
@@ -288,12 +288,12 @@ def classification_VGG(main_dir: str, csv_dir: str):
     
     # Validations checkpoints and Early stopping
     checkpoint = ModelCheckpoint("vgg16_1.h5", monitor='val_accuracy', verbose=1, save_best_only=True, save_weights_only=False, mode='auto', period=1)
-    early = EarlyStopping(monitor='val_accuracy', min_delta=0, patience=10, verbose=1, mode='auto')
+    early = EarlyStopping(monitor='val_accuracy', min_delta=0, patience=15, verbose=1, mode='auto')
 
     print(X_train.shape)
 
     model.summary()
-    hist = model.fit(traindata, steps_per_epoch=5, validation_data=testdata, validation_steps=5, epochs=50, callbacks=[checkpoint, early])
+    hist = model.fit(traindata, steps_per_epoch=5, validation_data=testdata, validation_steps=5, epochs=25, callbacks=[checkpoint, early])
     #hist = model.fit(traindata, steps_per_epoch=7, validation_data=testdata, validation_steps=5, epochs=50)
     
     # Plot train history
@@ -389,7 +389,7 @@ def classification_VGG_bin(main_dir: str, csv_dir: str):
     te_datagen = ImageDataGenerator()
     
     # Set the batch size
-    batch_size = 32
+    batch_size = 64
 
     # Resize train data
     #X_train = np.array([tf.image.resize(image, target_size).numpy() for image in X_train])
@@ -431,12 +431,12 @@ def classification_VGG_bin(main_dir: str, csv_dir: str):
     
     # Validations checkpoints and Early stopping
     checkpoint = ModelCheckpoint("vgg16_2.h5", monitor='val_accuracy', verbose=1, save_best_only=True, save_weights_only=False, mode='auto', period=1)
-    early = EarlyStopping(monitor='val_accuracy', min_delta=0, patience=10, verbose=1, mode='auto')
+    early = EarlyStopping(monitor='val_accuracy', min_delta=0, patience=20, verbose=1, mode='auto')
 
     print(X_train.shape)
 
     model.summary()
-    hist = model.fit(traindata, steps_per_epoch=5, validation_data=testdata, validation_steps=5, epochs=50, callbacks=[checkpoint, early])
+    hist = model.fit(traindata, steps_per_epoch=2, validation_data=testdata, validation_steps=5, epochs=20, callbacks=[checkpoint, early])
     #hist = model.fit(traindata, steps_per_epoch=7, validation_data=testdata, validation_steps=5, epochs=50)
     
     # Plot train history
@@ -476,5 +476,6 @@ directory = 'Body_Parts_Dataset/train'
 #complete_code(directory, train_csv_file)
 #complete_code_2(directory, train_csv_file)
 
-classification_VGG(directory, train_csv_file)
 classification_VGG_bin(directory, train_csv_file)
+classification_VGG(directory, train_csv_file)
+
