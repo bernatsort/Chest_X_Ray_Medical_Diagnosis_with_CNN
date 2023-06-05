@@ -1,0 +1,6 @@
+Data augmentation:
+- makes it hard for the model to simply memorize features 
+  and forces it to learn a good representation (more generalizable) of the data.
+- Example: The model sees an image and decides to relate its background color with the correct class.
+           Then sees an augmented image with a different color. Dang it! It has to learn something 
+           different because color isn’t the one.
