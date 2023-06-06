@@ -224,6 +224,8 @@ def classification_VGG(main_dir: str, csv_dir: str):
 
     descriptive_analysis(tags_df)
     
+    return
+    
     # Convert the image list and labels to NumPy arrays
     X = np.array(image_list)
     print(X.shape)
@@ -246,7 +248,7 @@ def classification_VGG(main_dir: str, csv_dir: str):
     te_datagen = ImageDataGenerator()
     
     # Set the batch size
-    batch_size = 128
+    batch_size = 64
 
     # Resize train data
     #X_train = np.array([tf.image.resize(image, target_size).numpy() for image in X_train])
@@ -366,6 +368,8 @@ def classification_VGG_bin(main_dir: str, csv_dir: str):
                 tags_df.loc[row, "Target"] = new_label
 
     descriptive_analysis(tags_df)
+    
+    return
         
     # Convert the image list and labels to NumPy arrays
     X = np.array(image_list)
@@ -476,6 +480,6 @@ directory = 'Body_Parts_Dataset/train'
 #complete_code(directory, train_csv_file)
 #complete_code_2(directory, train_csv_file)
 
-classification_VGG_bin(directory, train_csv_file)
+#classification_VGG_bin(directory, train_csv_file)
 classification_VGG(directory, train_csv_file)
 
