@@ -2,7 +2,7 @@
 
 ## Objetivos: 
 ### 1. Clasificación de partes del cuerpo
-La primera etapa del proyecto consiste en clasificar los 22 diferentes tipos de partes del cuerpo utilizando el modelo VGG16. Las 22 partes del cuerpo, con sus correspondientes etiquetas, son:
+La primera etapa del proyecto consiste en clasificar los 22 diferentes tipos de partes del cuerpo utilizando el modelo VGG16. Las 22 partes del cuerpo con sus correspondientes etiquetas son:
   Abdomen
 • Tobillo
 • Vértebras Cervicales
