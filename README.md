@@ -9,7 +9,7 @@
 - with the validation set: https://drive.google.com/drive/folders/1rXe2zRIbl_dr0T0FvDMfsoo2HlmlX87B?usp=sharing
 
 
-## Notebooks and scripts: 
+## Notebooks y scripts: 
 1. Body_Classification.py
 2. create_validation_set.py
 3. EDA_lung_classif.ipynb
