@@ -1,13 +1,15 @@
 # Diagnóstico de COVID-19 y neumonía a partir de radiografías de tórax
 
 ## Datasets: 
-1. Chest X-ray (Covid-19 & Pneumonia)
-- https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia?resource=download-directory
-
-2. The UNIFESP X-Ray Body Part Classification Dataset
+1. The UNIFESP X-Ray Body Part Classification Dataset
 - https://www.kaggle.com/datasets/felipekitamura/unifesp-xray-bodypart-classification
 
-## Notebooks and scripts: 
+2. Chest X-ray (Covid-19 & Pneumonia)
+- original: https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia?resource=download-directory
+- with the validation set: https://drive.google.com/drive/folders/1rXe2zRIbl_dr0T0FvDMfsoo2HlmlX87B?usp=sharing
+
+
+## Notebooks y scripts: 
 1. Body_Classification.py
 2. create_validation_set.py
 3. EDA_lung_classif.ipynb
