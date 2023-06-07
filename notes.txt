@@ -5,7 +5,8 @@ Data augmentation:
            Then sees an augmented image with a different color. Dang it! It has to learn something 
            different because color isn’t the one.
 
-TODO:
+
+Improvements to do:
 - Classification model without preprocessing. 
   - Without treating data imbalance. 
   - Treating data imbalance (class weights).
@@ -14,6 +15,7 @@ TODO:
   - Treating data imbalance (class weights).
 Compare the 2 models to see if the preprocessing has any effect. 
 
-
-
+- Model: 
+  - input_shape not specified: (224, 224, 3): the input shape of the test set matches the default assumptions made by the model.
+  - Update the model architecture and specify the appropriate input shape explicitly.
 
