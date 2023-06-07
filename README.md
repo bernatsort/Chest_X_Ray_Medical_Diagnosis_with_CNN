@@ -36,7 +36,7 @@ La segunda parte de este proyecto consiste en realizar un modelo que, a partir d
 - original: https://www.kaggle.com/datasets/prashant268/chest-xray-covid19-pneumonia?resource=download-directory
 - with the validation set: https://drive.google.com/drive/folders/1rXe2zRIbl_dr0T0FvDMfsoo2HlmlX87B?usp=sharing
 
-## Notebooks y scripts: 
+## 📒Notebooks y scripts: 
 ### Clasificación de partes del cuerpo
 1. Body_Classification.py
 ### Clasificación de imágenes de pulmón
