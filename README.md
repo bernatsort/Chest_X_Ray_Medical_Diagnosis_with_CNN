@@ -1,4 +1,4 @@
-# Diagnóstico de COVID-19 y neumonía a partir de imágenes radiológicas
+# Diagnóstico de COVID-19 y neumonía a partir de radiografías de tórax
 
 ## Datasets: 
 1. Chest X-ray (Covid-19 & Pneumonia)
