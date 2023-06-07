@@ -1,6 +1,6 @@
 # Diagnóstico de COVID-19 y neumonía a partir de radiografías de tórax
 
-## Objetivos: 
+## 📝Objetivos: 
 ### 1. Clasificación de partes del cuerpo
 La primera etapa del proyecto consiste en clasificar los 22 diferentes tipos de partes del cuerpo utilizando el modelo VGG16. Las 22 partes del cuerpo con sus correspondientes etiquetas son:
   Abdomen
@@ -28,7 +28,7 @@ La primera etapa del proyecto consiste en clasificar los 22 diferentes tipos de 
 ### 2. Clasificación de imágenes de pulmón
 La segunda parte de este proyecto consiste en realizar un modelo que, a partir de imágenes de rayos X del pulmón, nos saque un diagnóstico sobre si el paciente tiene COVID19, neumonía, o por el contrario se trata de un paciente sano. 
 
-## Datasets: 
+## 💾Datasets: 
 1. The UNIFESP X-Ray Body Part Classification Dataset
 - https://www.kaggle.com/datasets/felipekitamura/unifesp-xray-bodypart-classification
 
